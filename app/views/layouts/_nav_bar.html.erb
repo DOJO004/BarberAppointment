@@ -1,7 +1,15 @@
 <div class='border absolute top-0'>
   <ul class='flex'>
-    <li class='navbar_li'>首頁</li>
+    <li class='navbar_li'>
+      <%= link_to '首頁', root_path %>
+    </li>
     <li class='navbar_li'>關於我們</li>
     <li class='navbar_li'>預約</li>
+    <li class='navbar_li'>
+      <%= link_to '登入', new_user_session_path %>
+    </li>
+    <li class='navbar_li'>
+      <%= link_to '註冊', new_user_registration_path %>
+    </li>
   </ul>
 </div>
