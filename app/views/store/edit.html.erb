@@ -1,0 +1,14 @@
+<div>
+  <h2>編輯店面</h2>
+  <%= form_with(model: @store, url:store_path, data:{ turbo: false, turbo_method: :patch }) do |f|%>
+    <%= f.label :name, '名稱'%>
+    <%= f.text_field :name%>
+    <%= f.label :phone, '聯絡電話'%>
+    <%= f.text_field :phone %>
+    <%= f.label :address, '地址'%>
+    <%= f.text_field :address%>
+    <%= f.label :content, '簡介'%>
+    <%= f.text_area :content %>
+    <%= f.submit '送出', class: 'submit'%>
+  <% end %>
+</div>
