@@ -1,0 +1,18 @@
+<div>
+  <h2>管理後臺</h2>
+  <ul>
+    <% if @store %>
+      <li><%= @store.name%></li>
+      <li><%= @store.phone%></li>
+      <li><%= @store.address%></li>
+      <li><%= @store.content%></li>
+      <li><%= link_to '編輯', edit_store_path(id: @store.id) %></li>
+    <% else %>
+      <li>
+        <%= link_to '新增店面', new_store_path%>
+      </li>
+    <% end %>
+    <li>新增營業時間</li>
+    <li>新增員工</li>
+  </ul>
+</div>

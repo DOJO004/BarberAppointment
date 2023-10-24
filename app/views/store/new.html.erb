@@ -1,0 +1,14 @@
+<div>
+  <h2>新增店面</h2>
+  <%= form_with(model: @store, url:store_index_path, data:{ turbo: false}) do |f|%>
+    <%= f.label :name, '名稱'%>
+    <%= f.text_field :name%>
+    <%= f.label :phone, '聯絡電話'%>
+    <%= f.text_field :phone %>
+    <%= f.label :address, '地址'%>
+    <%= f.text_field :address%>
+    <%= f.label :content, '簡介'%>
+    <%= f.text_area :content %>
+    <%= f.submit '送出', class: 'submit'%>
+  <% end %>
+</div>

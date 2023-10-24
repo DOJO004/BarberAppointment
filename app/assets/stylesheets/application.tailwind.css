@@ -9,4 +9,25 @@
   .navbar_li {
     @apply mx-2;
   }
+  h1 {
+    @apply font-bold text-2xl;
+  }
+  h2 {
+    @apply font-bold text-xl;
+  }
+  p {
+    @apply text-base/loose;
+  }
+  label {
+    @apply block my-1;
+  }
+  input[type='text'] {
+    @apply w-full rounded-md;
+  }
+  textarea {
+    @apply w-full rounded-md min-h-min;
+  }
+  .submit {
+    @apply border bg-green-400 block cursor-pointer my-2 p-2 rounded-md text-white;
+  }
 }
